@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* 全体の設定 */
+body{
+  font-size: 15px;
+  font-family: 'Comic Sans MS',
+  'Chalkboard SE',
+  sans-serif;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-break: break-all;
+  color: #333;
+}
+
+a{
+  text-decoration: none;
+  color: #1ca9e3;
+}
+
+li {
+  list-style: none;
+}
+
+/* メニュー */
+.nav_all{
+  width: 100%;
+  position: fixed;
+  background-color: rgb(223, 247, 211);
+  box-shadow: 0 3px 3px 0 rgb( 0 0 0 / 20%);
+  z-index: 100;
+}
+.nav_list{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: auto;
+}
+.nav_item{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 24px;
+}
+.nav_link{
+  display: inline-block;
+  padding: 15px 0;
+}
+.nav_link:hover{
+  color: rgb(25, 110, 167);
+}
+
+/* トップ */
+.top{
+  display: flex;
+  height: 700px;
+  position: relative;
+  background-image: url(../img/N745_sukusukuhimawari_TP_V.jpg);
+  z-index: 1;
+  text-shadow: #0a92c8 4px 3px;
+}
+.top_title{
+  font-size: 120px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 170px;
+  left: 90px;
+  
+}
+.top_subtitle{
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff; 
+  letter-spacing: 5px;
+  position: absolute;
+  top: 340px;
+  left: 120px;
+}
+
+/* 自己紹介 ABOUT */
+.section{
+  padding: 120px 0;
+}
+.section:nth-of-type(odd){
+  background-color: rgb(249, 249, 246);
+}
+.inner{
+  margin: 0 auto;
+}
+.font1{
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  background-image: url(../img/23198277_m.jpg);
+  height: 100px;
+  margin-bottom: 40px;
+  width: 50%;
+}
+.font_a{
+  margin-right: 0;
+  margin-left: auto;
+  border-radius: 40px 0 0 40px;
+}
+.font_b{
+  margin-right: auto;
+  margin-left: 0;
+  border-radius: 0 40px 40px 0;
+}
+.font2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.font3{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.font4{
+  text-align: center;
+  font-size: 13px;
+}
+.font5{
+  width: 60%;
+  margin: 0 auto;
+}
+.about_img{
+  display: block;
+  margin: auto;
+  width: 50%;
+  border-radius: 50%;
+}
+.clearfix{
+  content: '';
+  display: block;
+  clear: both;
+  height: 180px;
+}
+.left{
+  float: left;
+  width: 50%;
+  padding: auto;
+}
+.right{
+  float: right;
+  width: 50%;
+  padding: auto;
+}
+.skill_list, .work_all, .contact_all{
+  max-width: 1000px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+.skill_item{
+  display: flex;
+  margin-bottom: 50px;
+
+}
+.skill_img{
+  margin-right: 20px;
+}
+.skill_img img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+/* 実績 works */
+.work_all{
+  display: flex;
+  flex-wrap: wrap;
+}
+.work_item{
+  flex: 32%;
+  margin-right: 2%;
+}
+.work_item:nth-of-type(3n){
+  margin-right: 0;
+}
+.work_item a img{
+  width: 100%;
+  border-radius: 20px;
+}
+.work_body p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 6px;
+}
+
+/* お問い合わせ */
+.contact_list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact_list li{
+  list-style: none;
+}
+.contact_img{
+  width: 80px;
+}
+.contact_mail{
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+
+
+/* フッター */
+.bottom{
+  background-color: rgb(223, 247, 211);
+  height: 30px;
+  z-index: 100;
+}
+.copyright{
+  font-size: 13px;
+  text-align: center;
+  color: #1ca9e3;
+}
